@@ -7,9 +7,10 @@ import time
 url = config.url
 page = config.page
 
-#抓图图片目标数和图片保存路径
+#抓图图片目标数 图片保存路径 目标图片点赞数
 target = config.target
 path = config.path
+target_like_num = config.target_like_num
 
 count = 1
 
@@ -26,7 +27,7 @@ while count <= target:
         image_url = match.group(2)
         image_url = image_url.replace("_340.jpg", "1280.jpg")
         image_like_num = match.group(4)
-        if int(image_like_num) >= 100:
+        if int(image_like_num) >= target_like_num:
             #获取保存路径
             image = urllib.request.urlopen(image_url).read()
             image_path = path + "/" + str(count) + ".jpg"

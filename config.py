@@ -7,3 +7,4 @@ page = 1
 
 #抓取图片数量
 target = 500
+target_like_num = 100
