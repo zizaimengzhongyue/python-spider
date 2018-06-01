@@ -1,4 +1,4 @@
-# 从 pixabay 上抓取点赞超过 100 的图片
+# 从 pixabay 上抓取图片
 ## Python 版本:
  Python 3.6.0  
 ## 运行方式: 
